@@ -31,4 +31,5 @@ public class Person {
     @OneToMany(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE})
     //Criaremos uma lista intermediaria, com os vários telefones que uma pessoa tem.
     private List<Phone> phones;
+
 }
